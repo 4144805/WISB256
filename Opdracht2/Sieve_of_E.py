@@ -18,4 +18,4 @@ l.sort()
 for x in l:
     f.write(str(x)+'\n')
 T2=time.perf_counter()
-print('Found '+str(len(l))+' Primes smaller than '+str(N)+' in', T2 - T1,'sec.')
+print('Found '+str(len(l))+' Prime numbers smaller than '+str(N)+' in', T2 - T1,'sec.')

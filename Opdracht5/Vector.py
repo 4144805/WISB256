@@ -7,13 +7,18 @@ class Vector(object):
         self.number = n
         self.elements = []
         if isinstance(kaas,float):
-            m = 1
-            while m <= n:
+            m = 0
+            while m <= self.number - 1:
+                self.elements.append(kaas)
+                m = m + 1
+        if isinstance(kaas,int):
+            m = 0
+            while m <= self.number - 1:
                 self.elements.append(kaas)
                 m = m + 1
         if isinstance(kaas,list):
             m = 0
-            while m <= n - 1:
+            while m <= self.number - 1:
                 self.elements.append(kaas[m])
                 m = m + 1
     def lincomb(self,other,a,b):

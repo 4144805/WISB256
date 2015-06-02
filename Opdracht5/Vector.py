@@ -16,21 +16,20 @@ class Vector(object):
             while m <= n - 1:
                 self.elements.append(kaas[m])
                 m = m + 1
-        
     def lincomb(self,other,a,b):
         vecci = []
         m = 0
         while m <= self.number - 1:
             vecci.append(a*self.elements[m] + b*other.elements[m])
             m = m + 1
-        return int(self.number)*'%g \n'  % tuple(vecci)
+        return Vector(len(vecci),vecci)
     def scalar(self,a):
         vecci = []
         m = 0
         while m <= self.number - 1:
             vecci.append(a*self.elements[m])
             m = m + 1
-        return int(self.number)*'%g \n'  % tuple(vecci)
+        return Vector(len(vecci), vecci)
     def inner(self,other):
         sommekke = 0
         m = 0

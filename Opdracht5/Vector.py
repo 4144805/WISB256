@@ -39,7 +39,7 @@ class Vector(object):
         sommekke = 0
         m = 0
         while m <= self.number - 1:
-            sommekke = sommekke + self.elements[m] + other.elements[m]
+            sommekke = sommekke + self.elements[m]*other.elements[m]
             m = m + 1
         return sommekke
     def norm(self):

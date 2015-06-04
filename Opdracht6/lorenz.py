@@ -12,7 +12,7 @@ class Lorenz(object):
         self.elements = kaas
     def f(self,X,t):
         [x,y,z] = X
-        f = [self.sigma*(x - y), x*(self.rho - z) - y, x*y - (self.beta)*z]
+        f = [self.sigma*(y - x), x*(self.rho - z) - y, x*y - (self.beta)*z]
         return f
     def solve(self, T, dt):
         v = []
